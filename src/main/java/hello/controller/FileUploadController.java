@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 // import java.io.InputStreamReader;
 // import java.io.BufferedReader;
@@ -40,10 +41,12 @@ public class FileUploadController {
 			String[][] filteredRows = {};
 
 			for (int i = 0; i < rows.length; i++) {
-				String[] items = rows[i].split(",");
-				List<String> filteredRow = IntStream.range(0, numCol).filter(j -> columns.contains(j)).mapToObj(j -> items[j])
-						.collect(Collectors.toList());
-				filteredRows = ArrayUtils.add(filteredRows, filteredRow.toArray());
+				String[] currentRow = rows[i].split(",");
+				List<String> filteredRow = new ArrayList<String>();
+				for (int j = 0; j < columns.size(); j++) {
+					filteredRow.add(currentRow[columns.get(j)]);
+				}
+				filteredRows = ArrayUtils.add(filteredRows, filteredRow.toArray(new String[0]));
 			}
 
 			return filteredRows;
