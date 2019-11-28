@@ -1,6 +1,6 @@
 .columns {
   vertical-align: middle;
-  font-size: 100px;
+  font-size: 140px;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
@@ -18,12 +18,10 @@
 
 label.column-label {
   font-family: "Courier New", Courier, monospace;
-  font-size: 100px;
+  font-size: 140px;
   color: #333;
-  height: 20px;
   width: 50%;
-  margin-left: 50px;
-  text-align: right;
+  margin: 40px;
   clear: both;
 }
 
@@ -32,6 +30,5 @@ input.column-input {
   height: 100px;
   border: 10px solid black;
   display: inline;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin: 45px;
 }
