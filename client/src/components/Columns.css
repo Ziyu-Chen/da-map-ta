@@ -1,0 +1,24 @@
+.column {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "title title";
+}
+
+label.column-label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #333;
+  height: 20px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: right;
+  clear: both;
+}
+
+input.column-input {
+  border: 1px solid #000;
+  display: inline;
+}

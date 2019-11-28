@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getColumns } from "../redux/actions";
+import "./UploadFile.css";
 
 function UploadFile(props) {
   function handleClick() {
@@ -8,15 +9,15 @@ function UploadFile(props) {
   }
   return (
     <div className="UploadFile">
-      <label for="file">Upload your Geolocation data</label>
       <input
+        className="file-input"
         type="file"
         name="file"
         id="file"
         onChange={e => props.getColumns(e.target.files[0])}
       />
       <button type="button" onClick={handleClick}>
-        Submit
+        Choose your Geolocation data
       </button>
     </div>
   );
