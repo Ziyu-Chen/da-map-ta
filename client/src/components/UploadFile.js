@@ -16,7 +16,7 @@ function UploadFile(props) {
         id="file"
         onChange={e => props.getColumns(e.target.files[0])}
       />
-      <button type="button" onClick={handleClick}>
+      <button className="file-button" type="button" onClick={handleClick}>
         Choose your Geolocation data
       </button>
     </div>

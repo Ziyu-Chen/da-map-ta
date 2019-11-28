@@ -3,3 +3,12 @@ input.file-input {
   top: -9999px;
   left: -9999px;
 }
+
+button {
+  width: 90%;
+  margin-top: 15%;
+  font-size: 100px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 16px 16px;
+  border-radius: 50px;
+}

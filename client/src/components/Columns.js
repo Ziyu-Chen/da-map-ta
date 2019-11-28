@@ -8,7 +8,7 @@ function Columns(props) {
     <div className="columns">
       {props.columns.length > 0 ? (
         <div>
-          <div>
+          <div className="instruction">
             Please select the information you need in addition to latitude and
             longtitude
           </div>
