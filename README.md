@@ -8,6 +8,7 @@ Java (Spring Framework)
 
 ### Front-End:
 JavaScript (React & Redux)
+Google Maps API
 
 ## Main Features
 ### Select Variables to Show on the Map
