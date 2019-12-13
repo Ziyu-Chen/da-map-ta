@@ -20,4 +20,5 @@ After selecting what variables
 ### Select all variables button
 ### More Data Analysis Functionalities
 Visualize regional average of a variable 
+
 Visualize regional maximum/minimum of a varialbe
