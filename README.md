@@ -1,4 +1,4 @@
-# da-map-ta
+# Da-Map-Ta
 It is a web app for visualizing geolocation data on a map. Users can upload their geolocation data that contain latitude and longitude of every location and Da-Map-Ta will show their data on Google Maps.
 It was created in five days during the Polyglottal week in Code Chrysalis when I was tasked with learning a new programming language and creating an app with that language.
 
